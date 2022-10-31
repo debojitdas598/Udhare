@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv"
+    app:cardBackgroundColor="@color/purple_lighter"
+    app:flow_verticalGap="3dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+
+    app:cardPreventCornerOverlap="true"
+
+
+
+
+    android:elevation="3dp"
+    app:cardCornerRadius="7dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp"
+    app:cardElevation="5dp">>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/typeindi"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="5dp"
+            />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--text view for our course name-->
+
+        <TextView
+            android:id="@+id/nameId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!--text view for our course tracks-->
+
+
+            <!--text view for our course duration-->
+
+            <TextView
+                android:id="@+id/amountId"
+                android:layout_width="387dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:padding="3dp"
+                android:text="Amount"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dateId"
+                android:textSize="17dp"
+                android:layout_width="409dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="Date"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/deletebtn"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/delete" />
+
+        </LinearLayout>
+
+        <!--text view for our course description-->
+
+        <TextView
+            android:id="@+id/descId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:textSize="16dp"
+            android:text="Description"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

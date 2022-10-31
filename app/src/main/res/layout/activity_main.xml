@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/main"
+    android:layout_marginBottom="20dp"
+
+
+    tools:context=".MainActivity">
+
+    <!--Edit text to enter course name-->
+
+    <!--edit text to enter course duration-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:background="@drawable/shadow"
+            android:elevation="50dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            app:srcCompat="@drawable/icon" />
+
+        <EditText
+            android:id="@+id/idName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:elevation="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter name"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/idAmount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/rounded_edittext"
+            android:elevation="5dp"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/idDate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:elevation="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Date"
+            android:inputType="date"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/idDetails"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/rounded_edittext"
+            android:elevation="5dp"
+            android:hint="Extra details"
+            android:padding="5dp" />
+
+        <RadioGroup
+            android:id="@+id/rgtype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cred"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/rounded_edittext"
+
+                android:elevation="5dp"
+
+                android:text="Credit" />
+
+            <RadioButton
+                android:id="@+id/debt"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_edittext"
+                android:elevation="5dp"
+
+                android:text="Debt" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/idAdd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_edittext"
+
+            android:elevation="10dp"
+            android:text="Add Udhar"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/idView"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/rounded_edittext"
+            android:elevation="10dp"
+
+            android:text="Read All Udhaars"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <!--edit text to display course tracks-->
+
+    <!--edit text for course description-->
+
+    <!--button for adding new course-->
+
+</LinearLayout>
